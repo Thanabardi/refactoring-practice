@@ -12,6 +12,9 @@ Each subdirectory contains some code that needs refactoring.
 
 Refactor timestamp.py.  2 or 3 refactorings are possible.
 
+- improve if elas statement.
+- move checking valid time method into a new function.
+
 
 ## `game_framework/gamelib.py`
 
@@ -21,6 +24,10 @@ Look for refactorings in the class `GameApp`.
 
 * Encapsulate a collection - provide behavior that subclasses of GameApp need instead of requiring them to manipulate a collection that belongs to the GameApp class.
   - Hint: `elements`
+
+- initialize canvas and call the `create_canvas` function.
+- import a width and height from outside the function.
+- replace `"news"` with the name that template provide `tk.NSEW`.
 
 ## `recipe/recipe.py` and `recipe/main.py`
 
