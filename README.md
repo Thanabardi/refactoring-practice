@@ -28,6 +28,7 @@ Look for refactorings in the class `GameApp`.
 - initialize canvas and call the `create_canvas` function.
 - import a width and height from outside the function.
 - replace `"news"` with the name that template provide `tk.NSEW`.
+- declare a global variable width, height, and update delay to use in `GameApp` class.
 
 ## `recipe/recipe.py` and `recipe/main.py`
 
@@ -43,7 +44,7 @@ The Recipe class defines a recipe for a hot beverage with attributes:
 
 Refactor `main.py`.  What can you do to eliminate the long, boring code?
 
-
+- create a `create_recipe` function to create a recipe. So, when we want to create a new recipe we just call that function.
 
 
 
