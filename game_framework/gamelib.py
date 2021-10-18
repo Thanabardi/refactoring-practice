@@ -2,6 +2,12 @@ import tkinter as tk
 from tkinter.constants import NSEW
 import tkinter.ttk as ttk
 
+
+CANVAS_WIDTH = 800
+CANVAS_HEIGHT = 500
+UPDATE_DELAY = 33
+
+
 class GameCanvasElement():
     """Base class for an element on the game canvas, with attributes:
 
@@ -83,8 +89,9 @@ class GameApp(ttk.Frame):
     It provides several call-back methods for initializing elements
     on the canvas, start/stop animation, and running the animation loop.
     """
-    
-    def __init__(self, parent, canvas_width=800, canvas_height=500, update_delay=33):
+
+    def __init__(self, parent, canvas_width=CANVAS_WIDTH,
+                canvas_height=CANVAS_HEIGHT, update_delay=UPDATE_DELAY):
         super().__init__(parent)
         self.parent = parent
         
